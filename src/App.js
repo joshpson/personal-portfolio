@@ -8,12 +8,13 @@ class App extends Component {
   render() {
     return (
       <Container>
-        <Menu borderless>
+        {/*        <Menu borderless>
           <Menu.Item header>Josh Pearson</Menu.Item>
           <Menu.Item as="a">Blog</Menu.Item>
           <Menu.Item as="a">Articles</Menu.Item>
         </Menu>
-        <Image src={headshot} size="small" circular />
+        <Image src={headshot} size="small" circular />*/}
+        Coming soon...
       </Container>
     );
   }
