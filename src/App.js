@@ -1,8 +1,19 @@
 import React, { Component } from "react";
-import { Container, Menu, Image, Dropdown } from "semantic-ui-react";
+import {
+  Container,
+  Menu,
+  Image,
+  Dropdown,
+  Grid,
+  Segment
+} from "semantic-ui-react";
+import { Switch, Route, withRouter } from "react-router-dom";
 
 import Nav from "./Nav";
-import "./App.css";
+import Home from "./Home";
+import Blog from "./Blog";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
 
 class App extends Component {
   constructor(props) {
@@ -10,11 +21,23 @@ class App extends Component {
   }
   render() {
     return (
-      <Container className="app-background">
-        <Nav />
+      <Container>
+        <Nav history={this.props.history} />
+        <Grid columns="equal">
+          <Grid.Column />
+          <Grid.Column width={10}>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/blog" component={Blog} />
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </Grid.Column>
+          <Grid.Column />
+        </Grid>
       </Container>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
