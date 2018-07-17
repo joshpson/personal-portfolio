@@ -16,7 +16,7 @@ class TaskItem extends React.Component {
 
   render() {
     return (
-      <Segment style={{ backgroundColor: "" }}>
+      <Segment>
         <Grid>
           <Grid.Column width={8}>
             <Header as="h1">Task Management App</Header>

@@ -6,7 +6,8 @@ import {
   Dropdown,
   Divider,
   Header,
-  Icon
+  Icon,
+  Segment
 } from "semantic-ui-react";
 
 class Blog extends React.Component {
