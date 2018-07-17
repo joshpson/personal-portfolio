@@ -27,15 +27,18 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ backgroundColor: "#fff" }}>
         <Menu secondary stackable size="massive">
           <Menu.Item>
             <Image src={headshot} size="tiny" circular />
           </Menu.Item>
           <Menu.Item onClick={this.handleItemClick} name="/">
-            <Header as="h1" className="nav-text">
-              Josh Pearson
-            </Header>
+            <div>
+              <Header as="h1" className="nav-text">
+                Josh Pearson
+              </Header>
+              <span>Software Engineer & Digital Marketer</span>
+            </div>
           </Menu.Item>
           <Menu.Menu position="right" pointing>
             <Menu.Item
