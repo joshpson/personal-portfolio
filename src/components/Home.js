@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "semantic-ui-react";
-import headshot from "./images/josh.jpg";
+import headshot from "../images/josh.jpg";
 
 class Home extends React.Component {
   constructor(props) {

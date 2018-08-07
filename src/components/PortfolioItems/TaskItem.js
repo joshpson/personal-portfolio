@@ -1,5 +1,5 @@
 import React from "react";
-import taskImage from "../images/TaskAppImg.png";
+import taskImage from "../../images/TaskAppImg.png";
 import {
   Image,
   Segment,
