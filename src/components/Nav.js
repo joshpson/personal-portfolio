@@ -16,43 +16,58 @@ class Nav extends React.Component {
     super(props);
     this.state = {
       active: null,
-      visible: false
+      visible: false,
+      caret: true
     };
   }
 
   handleItemClick = (e, { name }) => {
     this.setState({
-      active: name
+      active: name,
+      visible: false
     });
     this.props.history.push(name);
   };
 
   mobileMenu = () => {
     this.setState({
-      visible: !this.state.visible
+      visible: !this.state.visible,
+      caret: !this.state.caret
     });
   };
 
   render() {
     return (
       <div>
-        <Menu pointing secondary stackable size="massive">
-          <Menu.Item onClick={this.handleItemClick} name="/">
-            <span style={{ color: "#228fcf", fontSize: "40px" }}>
-              Josh Pearson
-            </span>
-          </Menu.Item>
-          {this.props.window < 767 ? (
-            <Menu.Item
-              onClick={this.mobileMenu}
-              name="mobilemenu"
-              style={{ color: "#228fcf" }}
-            >
-              Menu
+        <Menu secondary stackable size="massive">
+          {this.props.window > 767 ? (
+            <Menu.Item onClick={this.handleItemClick} name="/">
+              <span style={{ color: "#228fcf", fontSize: "40px" }}>
+                Josh Pearson
+              </span>
             </Menu.Item>
-          ) : null}
+          ) : (
+            <Menu.Item onClick={this.mobileMenu}>
+              <span style={{ color: "#228fcf", fontSize: "40px" }}>
+                Josh Pearson
+              </span>{" "}
+              <Icon
+                name={this.state.caret ? "caret down" : "caret up"}
+                style={{ color: "#228fcf", fontSize: "30px" }}
+              />
+            </Menu.Item>
+          )}
           {this.state.visible || this.props.window > 767 ? (
-            <Menu.Menu position="right" pointing>
+            <Menu.Menu position="right">
+              {this.props.window < 767 ? (
+                <Menu.Item
+                  onClick={this.handleItemClick}
+                  name="/"
+                  style={{ color: "#228fcf" }}
+                >
+                  Home
+                </Menu.Item>
+              ) : null}
               <Menu.Item
                 onClick={this.handleItemClick}
                 name="portfolio"
