@@ -21,10 +21,11 @@ class LostPagesCard extends React.Component {
             LostPages
           </Card.Header>
           <Card.Description>
-            Social network for lending and borrowing books from your friends.<br />
+            Social network built with Ruby on Rails, Bootstrap, and the Google
+            Book API.<br />
             <br />
-            Built with Rails, Bootstrap and Google's book API. Leverages
-            Omniauth for Facebook sign-in.<br />
+            Users can manage their library and lend and borrow books from their
+            friends.<br />
             <br />
             username: demo@demo.com<br />
             pw: demo<br />

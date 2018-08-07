@@ -21,9 +21,10 @@ class WeatherCard extends React.Component {
             HungryTrips
           </Card.Header>
           <Card.Description>
-            Single page application using Ruby on Rails, React, and Semantic UI.<br />
-            <br />Users can find the top rated restraunts for upcoming travel.
-            This app utilizes the Mapbox, Wikipedia, and Yelp APIs.<br />
+            Single page application built using Ruby on Rails, React, and
+            Semantic UI.<br />
+            <br />Users can save trips and find the top-rated restaurants near
+            their hotel. This app utilizes the Mapbox, Wikipedia, and Yelp APIs.<br />
             <br />
             username: demo@demo.com<br />
             pw: demo<br />

@@ -21,8 +21,8 @@ class TaskCard extends React.Component {
             Taskr
           </Card.Header>
           <Card.Description>
-            Single page application using Ruby on Rails, vanilla JavaScript and
-            Material Design Lite.<br />
+            Single page application built using Ruby on Rails, vanilla
+            JavaScript and Material Design Lite.<br />
             <br />This app allows users to manage projects and corresponding
             tasks with drag and drop functionality.<br />
             <br />

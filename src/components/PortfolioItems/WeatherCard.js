@@ -21,10 +21,11 @@ class WeatherCard extends React.Component {
             FreshAir
           </Card.Header>
           <Card.Description>
-            Single page application using Ruby on Rails, React, Redux and
+            Single page application built using Ruby on Rails, React, Redux and
             Bootstrap.<br />
-            <br />Users can save multiple locations and see real time weather
-            information. This app utilizes the Google Places and Dark Sky APIs.<br />
+            <br />Users can save multiple locations and see real-time weather
+            information. This app utilizes the Google Places and Dark Sky APIs.
+            <br />
             <br />
             username: demo@demo.com<br />
             pw: demo<br />
