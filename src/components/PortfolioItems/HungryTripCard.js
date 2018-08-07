@@ -1,30 +1,23 @@
 import React from "react";
 import tripImage from "../../images/hungrytrips.png";
-import {
-  Image,
-  Segment,
-  Container,
-  Grid,
-  Header,
-  Button,
-  Card,
-  Icon
-} from "semantic-ui-react";
+import { Image, Card, Icon } from "semantic-ui-react";
 
 class WeatherCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Card>
         <Image
           href="https://hungrytrips-pearson.netlify.com/"
           src={tripImage}
+          target="_blank"
+          rel="noopener noreferrer"
         />
         <Card.Content>
-          <Card.Header href="https://hungrytrips-pearson.netlify.com/">
+          <Card.Header
+            href="https://hungrytrips-pearson.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             HungryTrips
           </Card.Header>
           <Card.Description>
@@ -37,11 +30,19 @@ class WeatherCard extends React.Component {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <a href="https://github.com/joshpson/portfolio-tripapp-frontend">
+          <a
+            href="https://github.com/joshpson/portfolio-tripapp-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="github" />Github
           </a>
           {" - "}
-          <a href="https://hungrytrips-pearson.netlify.com/">
+          <a
+            href="https://hungrytrips-pearson.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="external alternate" />Demo
           </a>
         </Card.Content>

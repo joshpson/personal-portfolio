@@ -1,20 +1,10 @@
 import React, { Component } from "react";
-import {
-  Container,
-  Menu,
-  Image,
-  Dropdown,
-  Grid,
-  Segment,
-  Icon,
-  Divider
-} from "semantic-ui-react";
+import { Container, Grid, Icon, Divider } from "semantic-ui-react";
 import { Switch, Route, withRouter } from "react-router-dom";
 import debounce from "lodash/debounce";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
-import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
 class App extends Component {
@@ -54,7 +44,6 @@ class App extends Component {
                   path="/portfolio"
                   render={() => <Portfolio window={this.state.windowSize} />}
                 />
-                <Route path="/contact" component={Contact} />
               </Switch>
               <Divider horizontal />
               <Divider horizontal />
@@ -63,10 +52,18 @@ class App extends Component {
           <Container textAlign="center">
             <Divider horizontal />
             <div>
-              <a href="https://www.linkedin.com/in/joshpson/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/joshpson/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon size="big" name="linkedin" />
               </a>
-              <a href="https://github.com/joshpson" target="_blank">
+              <a
+                href="https://github.com/joshpson"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon size="big" name="github" />
               </a>
             </div>

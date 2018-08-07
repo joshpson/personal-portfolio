@@ -1,38 +1,36 @@
 import React from "react";
-import { Container, Image } from "semantic-ui-react";
+import { Container, Image, Grid } from "semantic-ui-react";
 import headshot from "../images/josh.jpg";
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Container>
-        <Image src={headshot} size="medium" floated="left" circular />
-        <div style={{ fontSize: "18px" }}>
-          <p>
-            Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam
-            alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret
-            referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque
-            electram, eos choro alterum definiebas in. Vim dolorum definiebas
-            an. Mei ex natum rebum iisque.
-          </p>
-          <p>
-            Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine
-            definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne,
-            his te phaedrum referrentur consectetuer. Id vix fabulas oporteat,
-            ei quo vide phaedrum, vim vivendum maiestatis in.
-          </p>
-          <p>
-            Eu quo homero blandit intellegebat. Incorrupte consequuntur mei id.
-            Mei ut facer dolores adolescens, no illum aperiri quo, usu odio
-            brute at. Qui te porro electram, ea dico facete utroque quo. Populo
-            quodsi te eam, wisi everti eos ex, eum elitr altera utamur at.
-            Quodsi convenire mnesarchum eu per, quas minimum postulant per id.
-          </p>
-        </div>
+        <Grid stackable centered columns={2}>
+          <Grid.Column width={4}>
+            <Image src={headshot} size="medium" circular centered />
+          </Grid.Column>
+          <Grid.Column width={12}>
+            <div style={{ fontSize: "18px" }}>
+              <h2>About Me</h2>
+              <p>
+                I'm a full stack web developer based in Washington, D.C.,
+                proficient in React, Redux, JavaScript, and Ruby on Rails. As a
+                digital fundraiser for many years, I discovered a passion for
+                user experience and tackling hard technical problems.<br />
+                <br />
+                Eventually, I became tired of paying developers to address the
+                fun challenges I wanted to solve. I decided to learn how to code
+                myself and fell in love with web development at Flatiron School.
+                <br />
+                <br />
+                I bring strong communications skills, managerial experience, and
+                a desire to make the world a better place through technology.
+                Let's talk!
+              </p>
+            </div>
+          </Grid.Column>
+        </Grid>
       </Container>
     );
   }

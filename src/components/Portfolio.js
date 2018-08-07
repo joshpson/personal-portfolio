@@ -1,15 +1,11 @@
 import React from "react";
-import { Pagination, Container, Divider, Card } from "semantic-ui-react";
+import { Container, Divider, Card } from "semantic-ui-react";
 import TaskCard from "./PortfolioItems/TaskCard";
 import WeatherCard from "./PortfolioItems/WeatherCard";
 import HungryTripCard from "./PortfolioItems/HungryTripCard";
 import LostPagesCard from "./PortfolioItems/LostPagesCard";
 
 class Portfolio extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   itemsCount = size => {
     if (size > 1000) {
       return 4;

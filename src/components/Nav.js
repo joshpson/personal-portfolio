@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Menu,
-  Image,
-  Dropdown,
-  Divider,
-  Header,
-  Icon,
-  Sidebar,
-  Segment
-} from "semantic-ui-react";
+import { Menu, Dropdown, Header, Icon } from "semantic-ui-react";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -90,7 +80,11 @@ class Nav extends React.Component {
                   <Dropdown.Item>
                     {" "}
                     <Header as="h3">
-                      <a href="mailto:jpearson846@gmail.com" target="_blank">
+                      <a
+                        href="mailto:jpearson846@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Icon size="big" name="mail" />jpearson846@gmail.com
                       </a>
                     </Header>
@@ -100,6 +94,7 @@ class Nav extends React.Component {
                       <a
                         href="https://www.linkedin.com/in/joshpson/"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <Icon size="big" name="linkedin" />/joshpson
                       </a>
@@ -107,7 +102,11 @@ class Nav extends React.Component {
                   </Dropdown.Item>
                   <Dropdown.Item>
                     <Header as="h3">
-                      <a href="https://github.com/joshpson" target="_blank">
+                      <a
+                        href="https://github.com/joshpson"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Icon size="big" name="github" />/joshpson
                       </a>
                     </Header>

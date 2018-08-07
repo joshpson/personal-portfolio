@@ -1,27 +1,28 @@
 import React from "react";
-import {
-  Container,
-  Menu,
-  Image,
-  Dropdown,
-  Divider,
-  Header,
-  Icon,
-  Segment
-} from "semantic-ui-react";
+import { Container, Header } from "semantic-ui-react";
 
 class Blog extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Container text>
         <Header as="h2">
           <a
+            href="https://medium.com/@josh.j.pearson/api-calls-in-rails-5-2-with-encrypted-credentials-3a3993abd2f3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            API Calls in Rails 5.2 with Encrypted Credentials
+          </a>
+        </Header>
+        <p>
+          How to make get requests in rails, how to pass the API response to my
+          frontend, and how to store my API secret token in rails...
+        </p>
+        <Header as="h2">
+          <a
             href="https://medium.com/@josh.j.pearson/dynamically-created-draggable-items-e265ff979008"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Dynamically Created Draggable Items
           </a>
@@ -36,6 +37,7 @@ class Blog extends React.Component {
           <a
             href="https://medium.com/@josh.j.pearson/regular-expressions-101-f1ce78fc120b"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Regular Expression 101
           </a>
@@ -51,6 +53,7 @@ class Blog extends React.Component {
           <a
             href="https://medium.com/@josh.j.pearson/creating-a-simple-search-form-in-rails-28008514d5a2"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Creating a Simple Search Form in Rails
           </a>
@@ -64,6 +67,7 @@ class Blog extends React.Component {
           <a
             href="https://medium.com/@josh.j.pearson/learning-active-record-through-excel-fa746cb6e8e8"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Learning Active Record Queries With Excel
           </a>

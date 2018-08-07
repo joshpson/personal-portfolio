@@ -1,30 +1,23 @@
 import React from "react";
 import weatherImage from "../../images/weather.png";
-import {
-  Image,
-  Segment,
-  Container,
-  Grid,
-  Header,
-  Button,
-  Card,
-  Icon
-} from "semantic-ui-react";
+import { Image, Card, Icon } from "semantic-ui-react";
 
 class WeatherCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Card>
         <Image
           href="https://freshair-pearson.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
           src={weatherImage}
         />
         <Card.Content>
-          <Card.Header href="https://freshair-pearson.netlify.com/">
+          <Card.Header
+            href="https://freshair-pearson.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             FreshAir
           </Card.Header>
           <Card.Description>
@@ -38,11 +31,19 @@ class WeatherCard extends React.Component {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <a href="https://github.com/joshpson/portfolio-weatherapp-frontend">
+          <a
+            href="https://github.com/joshpson/portfolio-weatherapp-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="github" />Github
           </a>
           {" - "}
-          <a href="https://freshair-pearson.netlify.com/">
+          <a
+            href="https://freshair-pearson.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="external alternate" />Demo
           </a>
         </Card.Content>

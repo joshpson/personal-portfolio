@@ -1,30 +1,23 @@
 import React from "react";
 import taskImage from "../../images/TaskAppImg.png";
-import {
-  Image,
-  Segment,
-  Container,
-  Grid,
-  Header,
-  Button,
-  Card,
-  Icon
-} from "semantic-ui-react";
+import { Image, Card, Icon } from "semantic-ui-react";
 
 class TaskCard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Card>
         <Image
           href="https://joshpson.github.io/portfolio-tasker-frontend/"
+          target="_blank"
+          rel="noopener noreferrer"
           src={taskImage}
         />
         <Card.Content>
-          <Card.Header href="https://joshpson.github.io/portfolio-tasker-frontend/">
+          <Card.Header
+            href="https://joshpson.github.io/portfolio-tasker-frontend/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Taskr
           </Card.Header>
           <Card.Description>
@@ -37,11 +30,19 @@ class TaskCard extends React.Component {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-          <a href="https://github.com/joshpson/portfolio-tasker-frontend">
+          <a
+            href="https://github.com/joshpson/portfolio-tasker-frontend"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="github" />Github
           </a>
           {" - "}
-          <a href="https://joshpson.github.io/portfolio-tasker-frontend/">
+          <a
+            href="https://joshpson.github.io/portfolio-tasker-frontend/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon name="external alternate" />Demo
           </a>
         </Card.Content>
