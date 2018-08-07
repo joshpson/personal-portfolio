@@ -1,8 +1,11 @@
 {
   "main.css": "static/css/main.c908a936.css",
   "main.css.map": "static/css/main.c908a936.css.map",
-  "main.js": "static/js/main.2ed439a3.js",
-  "main.js.map": "static/js/main.2ed439a3.js.map",
-  "static/media/TaskAppImg.png": "static/media/TaskAppImg.072ee002.png",
-  "static/media/josh.jpg": "static/media/josh.cfa913da.jpg"
+  "main.js": "static/js/main.5742fde3.js",
+  "main.js.map": "static/js/main.5742fde3.js.map",
+  "static/media/TaskAppImg.png": "static/media/TaskAppImg.0fc6538c.png",
+  "static/media/hungrytrips.png": "static/media/hungrytrips.55f6a2f0.png",
+  "static/media/josh.jpg": "static/media/josh.cfa913da.jpg",
+  "static/media/lostpages.png": "static/media/lostpages.8b3a78df.png",
+  "static/media/weather.png": "static/media/weather.57c5936b.png"
 }
