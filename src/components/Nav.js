@@ -92,22 +92,11 @@ class Nav extends React.Component {
                   <Dropdown.Item>
                     <Header as="h3">
                       <a
-                        href="https://www.linkedin.com/in/joshpson/"
+                        href="tel:484-678-7605"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Icon size="big" name="linkedin" />/joshpson
-                      </a>
-                    </Header>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <Header as="h3">
-                      <a
-                        href="https://github.com/joshpson"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Icon size="big" name="github" />/joshpson
+                        <Icon size="big" name="phone" />484-678-7605
                       </a>
                     </Header>
                   </Dropdown.Item>
