@@ -24,7 +24,8 @@ class Nav extends React.Component {
   handleItemClick = (e, { name }) => {
     this.setState({
       active: name,
-      visible: false
+      visible: false,
+      caret: true
     });
     this.props.history.push(name);
   };

@@ -50,7 +50,10 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/blog" component={Blog} />
-                <Route path="/portfolio" component={Portfolio} />
+                <Route
+                  path="/portfolio"
+                  render={() => <Portfolio window={this.state.windowSize} />}
+                />
                 <Route path="/contact" component={Contact} />
               </Switch>
               <Divider horizontal />
