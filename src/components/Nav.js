@@ -56,7 +56,7 @@ class Nav extends React.Component {
                   name="/"
                   style={{ color: "#228fcf" }}
                 >
-                  Home
+                  About
                 </Menu.Item>
               ) : null}
               <Menu.Item
