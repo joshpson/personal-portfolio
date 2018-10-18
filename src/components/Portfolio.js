@@ -4,6 +4,7 @@ import TaskCard from "./PortfolioItems/TaskCard";
 import WeatherCard from "./PortfolioItems/WeatherCard";
 import HungryTripCard from "./PortfolioItems/HungryTripCard";
 import LostPagesCard from "./PortfolioItems/LostPagesCard";
+import TwentyFourCard from "./PortfolioItems/TwentyFourCard";
 
 class Portfolio extends React.Component {
   itemsCount = size => {
@@ -22,6 +23,7 @@ class Portfolio extends React.Component {
         <Divider horizontal />
         <Card.Group itemsPerRow={this.itemsCount(this.props.window)}>
           <WeatherCard />
+          <TwentyFourCard />
           <TaskCard />
           <HungryTripCard />
           <LostPagesCard />
