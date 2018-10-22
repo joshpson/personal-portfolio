@@ -21,9 +21,9 @@ class TwentyFour extends React.Component {
             2048
           </Card.Header>
           <Card.Description>
-            This is a clone of one of my favorite games, 2048. The goal is to
-            add up blocks until you reach 2048 by using the arrow keys. Once you
-            can no longer move any blocks, you lose. <br />
+            A clone of one of my favorite games, 2048. The goal is to add up
+            blocks until you reach 2048 by using the arrow keys. Once you can no
+            longer move any blocks, you lose. <br />
             <br />This project was built with JavaScript & Sass using webpack
             and babel.
             <br />
