@@ -14,7 +14,7 @@ class TwentyFour extends React.Component {
         />
         <Card.Content>
           <Card.Header
-            href="https://freshair-pearson.netlify.com/"
+            href="https://pearson-2048.netlify.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
