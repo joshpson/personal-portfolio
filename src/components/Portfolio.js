@@ -23,8 +23,8 @@ class Portfolio extends React.Component {
         <Divider horizontal />
         <Card.Group itemsPerRow={this.itemsCount(this.props.window)}>
           <WeatherCard />
-          <TwentyFourCard />
           <TaskCard />
+          <TwentyFourCard />
           <HungryTripCard />
           <LostPagesCard />
         </Card.Group>
