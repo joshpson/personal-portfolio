@@ -17,7 +17,8 @@ class Home extends React.Component {
                 I'm a full stack web developer based in Washington, D.C.,
                 proficient in React, Redux, JavaScript, and Ruby on Rails. As a
                 digital fundraiser for many years, I discovered a passion for
-                user experience and tackling hard technical problems.<br />
+                user experience and tackling hard technical problems.
+                <br />
                 <br />
                 Eventually, I became tired of paying developers to address the
                 fun challenges I wanted to solve. I decided to learn how to code
@@ -27,6 +28,12 @@ class Home extends React.Component {
                 I bring strong communications skills, managerial experience, and
                 a desire to make the world a better place through technology.
                 Let's talk!
+                <br />
+                <br />
+                P.S. I haven't updated this portfolio since I left Flatiron
+                School last year, as I've been developing full time for a B2B
+                company and I can't post my projects here. Feel free to reach
+                out to learn more about what I'm doing now day-to-day!
               </p>
             </div>
           </Grid.Column>
